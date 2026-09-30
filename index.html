@@ -1,0 +1,339 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>52 Barber Shop · holičstvo v Dubnici nad Váhom — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre 52 Barber Shop v Dubnici nad Váhom. Ukážka od webdavid.sk.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231a3c9e'/%3E%3Ctext x='16' y='23' font-family='Arial Black,sans-serif' font-weight='900' font-size='18' text-anchor='middle' fill='%23f5c518'%3E52%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b1530;
+  --blue:#1a3c9e;
+  --blue-d:#122a74;
+  --yellow:#f5c518;
+  --steel:#c5cdd0;
+  --steel-l:#e2e7e8;
+  --steel-d:#8b979d;
+  --paper:#f3f5f2;
+  --line:rgba(11,21,48,.22);
+  --gut:clamp(16px,4vw,48px);
+  --disp:'Bungee','Arial Black',sans-serif;
+  --body:'IBM Plex Sans Condensed','Arial Narrow',sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 17px/1.55 var(--body);color:var(--ink);background:var(--steel);padding-bottom:0}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;box-shadow:0 0 0 6px var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+.lbl{font:600 12.5px/1.2 var(--body);letter-spacing:.17em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums}
+/* notice */
+.notice{background:var(--ink);color:#dfe5f3;font:500 13.5px/1.4 var(--body);padding:9px var(--gut);text-align:left}
+.notice b{color:var(--yellow);font-weight:600}
+/* header */
+.hd{background:var(--steel);border-bottom:2px solid var(--ink)}
+.hd .wrap{display:flex;align-items:center;gap:28px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .plq{font:400 22px/1 var(--disp);background:var(--blue);color:var(--yellow);padding:8px 10px 7px;letter-spacing:.02em;outline:1.5px dashed var(--yellow);outline-offset:-5px}
+.brand span.t{font:700 13px/1.15 var(--body);letter-spacing:.2em;text-transform:uppercase}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{font:600 13.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 0;background:linear-gradient(var(--ink),var(--ink)) 0 calc(100% - 9px)/0 1px no-repeat;transition:background-size .2s}
+.nav a:hover{background-size:100% 1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;font:700 14px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:2px solid var(--ink);cursor:pointer;transition:background-color .2s,color .2s}
+.btn-b{background:var(--blue);color:var(--yellow);border-color:var(--blue)}
+.btn-b:hover{background:var(--ink);border-color:var(--ink)}
+.btn-y{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
+.btn-y:hover{background:#fff;border-color:#fff}
+.btn-o{background:transparent;color:var(--ink)}
+.btn-o:hover{background:var(--ink);color:var(--steel)}
+.hd .btn{min-height:44px;padding:0 18px}
+/* hero */
+.hero{padding:clamp(28px,5vw,60px) 0 clamp(34px,5vw,64px)}
+.hero-g{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(24px,5vw,72px);align-items:center}
+.hero .lbl{color:var(--blue-d);display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.hero .lbl::before{content:"";width:34px;height:2px;background:var(--ink)}
+h1{font:400 clamp(38px,5.6vw,70px)/1.06 var(--disp);letter-spacing:-.005em}
+h1 .plq{display:inline-block;background:var(--blue);color:var(--yellow);padding:.08em .22em .02em;margin-right:.1em;transform:translateY(-.04em)}
+.lead{margin-top:26px;font:500 clamp(20px,2.3vw,26px)/1.3 var(--body);max-width:30ch;padding-left:18px;border-left:3px solid var(--ink)}
+.lead small{display:block;margin-top:10px;font:500 13px/1.4 var(--body);letter-spacing:.06em;color:#34405c}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.cta-note{margin-top:12px;font-size:13.5px;color:#34405c;max-width:46ch}
+.facts{display:grid;grid-template-columns:repeat(3,auto);gap:0;margin-top:34px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);max-width:600px}
+.facts div{padding:14px 18px 14px 0}
+.facts div+div{padding-left:18px;border-left:1px solid var(--line)}
+.facts strong{display:block;font:400 26px/1 var(--disp);margin-bottom:6px}
+.facts strong svg{display:inline-block;width:.8em;height:.8em;vertical-align:-.04em;fill:var(--blue)}
+.facts span{font:500 13px/1.3 var(--body);color:#2c3855}
+.wrapper{justify-self:center;width:min(100%,380px);transform:rotate(2.2deg);filter:drop-shadow(0 1px 0 rgba(11,21,48,.35)) drop-shadow(0 14px 18px rgba(11,21,48,.18))}
+.wrapper svg{width:100%}
+.wrapper text{font-family:var(--body)}
+.wrapper .bg{font-family:var(--disp)}
+/* hours strip */
+.hours{background:var(--ink);color:#dfe5f3}
+.hours .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;padding-top:14px;padding-bottom:14px}
+.hours .lbl{color:var(--yellow)}
+.hours p{font:500 16px/1.4 var(--body)}
+.hours em{font-style:normal;color:#9fb0d8;font-size:14px}
+/* money block */
+.rez{background:var(--blue);color:#eef2ff;padding:clamp(44px,7vw,92px) 0;position:relative}
+.rez::before,.rez::after{content:"";position:absolute;left:0;right:0;height:10px;background:radial-gradient(circle at 50% 50%,var(--steel) 3.2px,transparent 3.7px) 0 0/18px 10px repeat-x}
+.rez::before{top:-5px}.rez::after{bottom:-5px}
+.rez-g{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,6vw,80px);align-items:center}
+.rez .lbl{color:var(--yellow)}
+h2{font:400 clamp(30px,4.3vw,52px)/1.08 var(--disp)}
+.rez h2{margin:14px 0 20px;color:#fff}
+.rez p{max-width:46ch;color:#d3dcf5}
+.rez .tiny{margin-top:14px;font-size:14px;color:#a9b8e6}
+.ticket{position:relative;background:var(--paper);color:var(--ink);padding:34px 34px 30px 40px}
+.ticket::before,.ticket::after{content:"";position:absolute;top:0;bottom:0;width:8px;background:radial-gradient(circle at 0 14px,var(--blue) 7px,transparent 7.6px) 0 0/8px 28px repeat-y}
+.ticket::before{left:0}
+.ticket::after{right:0;transform:scaleX(-1)}
+.ticket .lbl{color:var(--blue-d)}
+.ticket h3{font:400 28px/1.1 var(--disp);margin:10px 0 18px}
+.ticket .btn{width:100%;min-height:58px;font-size:15px}
+.ticket .langs{display:flex;flex-wrap:wrap;gap:6px;margin:20px 0 0;padding-top:16px;border-top:2px dashed var(--line);list-style:none;padding-left:0}
+.ticket .langs li{font:700 12px/1 var(--body);letter-spacing:.12em;padding:6px 8px;border:1px solid var(--ink)}
+.ticket small{display:block;margin-top:14px;font-size:13.5px;line-height:1.45;color:#34405c}
+/* services */
+.sl{padding:clamp(52px,7vw,96px) 0;background:var(--steel-l)}
+.sl-g{display:grid;grid-template-columns:5fr 7fr;gap:clamp(28px,6vw,80px);align-items:start}
+.sl .lbl{color:var(--blue-d)}
+.sl h2{margin:14px 0 18px}
+.sl .side p{max-width:36ch;color:#26314d}
+.rows{list-style:none;padding:0;border-top:2px solid var(--ink)}
+.rows li{display:grid;grid-template-columns:auto 1fr auto;gap:10px 22px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+.rows li:last-child{border-bottom:2px solid var(--ink)}
+.rows svg{width:64px;height:auto}
+.rows h3{font:400 clamp(21px,2.6vw,30px)/1.1 var(--disp)}
+.rows p{font-size:14.5px;color:#34405c;margin-top:6px}
+.rows .pr{font:600 12px/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase;text-align:right;color:var(--blue-d);max-width:20ch}
+/* why + rating */
+.why{background:var(--ink);color:#e7ecf8;padding:clamp(52px,7vw,92px) 0}
+.why-g{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,7vw,100px);align-items:center}
+.medal{display:flex;align-items:center;gap:26px}
+.medal svg{width:150px;flex:none}
+.big{font:400 clamp(72px,10vw,128px)/.9 var(--disp);color:var(--yellow);letter-spacing:-.02em}
+.big small{display:block;font:600 12.5px/1.4 var(--body);letter-spacing:.17em;text-transform:uppercase;color:#b9c6ea;margin-top:14px;letter-spacing:.17em}
+.pts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;list-style:none;padding:0}
+.pts li{padding:0 26px 0 0}
+.pts li+li{padding-left:26px;border-left:1px solid rgba(231,236,248,.22)}
+.pts h3{font:400 19px/1.15 var(--disp);color:#fff;margin-bottom:10px}
+.pts p{font-size:15px;color:#b9c6ea}
+.why-top{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,6vw,90px);align-items:center;padding-bottom:clamp(32px,5vw,56px);margin-bottom:clamp(32px,5vw,56px);border-bottom:2px dashed rgba(231,236,248,.3)}
+.why-q{font:500 clamp(22px,2.7vw,32px)/1.25 var(--body);max-width:28ch}
+.why-q small{display:block;margin-top:12px;font:500 13px/1.4 var(--body);color:#9fb0d8;letter-spacing:.05em}
+.src{margin-top:clamp(24px,4vw,40px);font-size:13px;color:#8fa0cc}
+/* contact */
+.ct{padding:clamp(52px,7vw,96px) 0;background:var(--steel)}
+.ct-g{display:grid;grid-template-columns:7fr 5fr;gap:clamp(28px,6vw,80px);align-items:start}
+.ct .lbl{color:var(--blue-d)}
+.ct h2{margin:14px 0 26px}
+dl{border-top:2px solid var(--ink)}
+dl>div{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+dt{font:600 12.5px/1.6 var(--body);letter-spacing:.15em;text-transform:uppercase;color:var(--blue-d)}
+dd{font:500 18px/1.4 var(--body)}
+dd em{display:block;font-style:normal;font-size:13.5px;color:#34405c;margin-top:2px;font-weight:400}
+dd a{text-decoration:none;background:linear-gradient(var(--ink),var(--ink)) 0 100%/100% 1px no-repeat;padding-bottom:1px}
+dd a:hover{background-size:100% 2px}
+.nav-card{position:relative;background:var(--blue);color:#eef2ff;padding:34px;align-self:start}
+.nav-card::before{content:"";position:absolute;left:14px;right:14px;top:14px;bottom:14px;border:1px dashed rgba(245,197,24,.6);pointer-events:none}
+.nav-card .lbl{color:var(--yellow)}
+.nav-card h3{font:400 28px/1.12 var(--disp);margin:12px 0 14px;color:#fff}
+.nav-card p{color:#cfd9f5;margin-bottom:22px;font-size:16px}
+.nav-card .btn{position:relative}
+/* footer */
+.ft{background:var(--ink);color:#9fb0d8;font-size:14px;padding:26px 0}
+.ft .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.ft b{color:#fff;font-weight:600}
+/* mobile bar */
+.mbar{display:none}
+@media (max-width:900px){
+  .nav{display:none}
+  .hd .btn{margin-left:auto}
+  .hero-g,.rez-g,.sl-g,.ct-g{grid-template-columns:1fr}
+  .wrapper{order:-1;width:min(64%,250px);justify-self:start;margin:4px 0 6px 6px}
+  .why-top{grid-template-columns:1fr}
+  .pts{grid-template-columns:1fr;gap:22px}
+  .pts li,.pts li+li{padding:0;border:0}
+  .pts li+li{padding-top:22px;border-top:1px solid rgba(231,236,248,.22)}
+}
+@media (max-width:640px){
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+  .brand span.t{display:none}
+  .hd .wrap{min-height:60px}
+  .facts{grid-template-columns:1fr 1fr 1fr}
+  .facts div{padding:12px 10px 12px 0}
+  .facts div+div{padding-left:10px}
+  .facts strong{font-size:20px}
+  .facts span{font-size:12px}
+  .rows li{grid-template-columns:auto 1fr;padding:20px 0}
+  .rows svg{width:48px}
+  .rows .pr{grid-column:1/-1;text-align:left;max-width:none}
+  dl>div{grid-template-columns:1fr;gap:2px}
+  .ticket{padding:28px 24px 26px 30px}
+  .medal{gap:16px}.medal svg{width:104px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--ink);border-top:2px solid var(--yellow);padding:8px 12px calc(8px + env(safe-area-inset-bottom));gap:8px}
+  .mbar .btn{min-height:48px;padding:0 10px;font-size:13.5px}
+  .mbar .btn-o{color:#fff;border-color:#fff}
+  .mbar .btn-o:hover{background:#fff;color:var(--ink)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="st" viewBox="0 0 24 24"><polygon points="12,1.8 14.9,8.5 22.2,9.2 16.7,14 18.4,21.2 12,17.4 5.6,21.2 7.3,14 1.8,9.2 9.1,8.5"/></symbol></defs></svg>
+
+<div class="notice"><b>Neoficiálny návrh</b> — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="hd"><div class="wrap">
+  <a class="brand" href="#top" aria-label="52 Barber Shop, hore"><span class="plq">52</span><span class="t">Barber Shop</span></a>
+  <nav class="nav" aria-label="Hlavná navigácia"><a href="#rezervacia">Rezervácia</a><a href="#sluzby">Služby</a><a href="#preco">Prečo sem</a><a href="#kontakt">Kontakt</a></nav>
+  <a class="btn btn-b" href="https://services.bookio.com/52-barber-shop-7yi0pli7/widget?lang=sk" target="_blank" rel="noopener">Rezervovať</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap hero-g">
+  <div class="copy">
+    <p class="lbl">Holičstvo · Dubnica nad Váhom</p>
+    <h1><span class="plq">52</span> Barber Shop</h1>
+    <p class="lead">„Tradičné holičské remeslo prelína so súčasnými trendmi“<small>— tak sa predstavujú na profile Orly Kaderníctva</small></p>
+    <div class="cta">
+      <a class="btn btn-b" href="https://services.bookio.com/52-barber-shop-7yi0pli7/widget?lang=sk" target="_blank" rel="noopener">Rezervovať termín</a>
+      <a class="btn btn-o" href="https://instagram.com/52_barbershop" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="cta-note">Tlačidlo vedie do ich existujúceho rezervačného systému Bookio.</p>
+    <div class="facts">
+      <div><strong class="num">5,0 <svg aria-hidden="true"><use href="#st"/></svg></strong><span>Google · 63 hodnotení</span></div>
+      <div><strong class="num">5,0</strong><span>Orly Kaderníctva · 62 hodnotení</span></div>
+      <div><strong class="num">2022–26</strong><span>zlatá medaila Orly</span></div>
+    </div>
+  </div>
+
+  <div class="wrapper" role="img" aria-label="Papierový obal žiletky s veľkým číslom 52 a nakresleným čepeľovým okienkom">
+  <svg viewBox="0 0 400 540" aria-hidden="true">
+    <rect width="400" height="540" fill="#1a3c9e"/>
+    <g fill="#c5cdd0">
+      <circle cx="0" cy="22" r="8"/><circle cx="0" cy="52" r="8"/><circle cx="0" cy="82" r="8"/><circle cx="0" cy="112" r="8"/><circle cx="0" cy="142" r="8"/><circle cx="0" cy="172" r="8"/><circle cx="0" cy="202" r="8"/><circle cx="0" cy="232" r="8"/><circle cx="0" cy="262" r="8"/><circle cx="0" cy="292" r="8"/><circle cx="0" cy="322" r="8"/><circle cx="0" cy="352" r="8"/><circle cx="0" cy="382" r="8"/><circle cx="0" cy="412" r="8"/><circle cx="0" cy="442" r="8"/><circle cx="0" cy="472" r="8"/><circle cx="0" cy="502" r="8"/>
+      <circle cx="400" cy="22" r="8"/><circle cx="400" cy="52" r="8"/><circle cx="400" cy="82" r="8"/><circle cx="400" cy="112" r="8"/><circle cx="400" cy="142" r="8"/><circle cx="400" cy="172" r="8"/><circle cx="400" cy="202" r="8"/><circle cx="400" cy="232" r="8"/><circle cx="400" cy="262" r="8"/><circle cx="400" cy="292" r="8"/><circle cx="400" cy="322" r="8"/><circle cx="400" cy="352" r="8"/><circle cx="400" cy="382" r="8"/><circle cx="400" cy="412" r="8"/><circle cx="400" cy="442" r="8"/><circle cx="400" cy="472" r="8"/><circle cx="400" cy="502" r="8"/>
+    </g>
+    <rect x="24" y="24" width="352" height="492" fill="none" stroke="#f5c518" stroke-width="1.6"/>
+    <rect x="31" y="31" width="338" height="478" fill="none" stroke="#f5c518" stroke-width=".6" opacity=".7"/>
+    <text x="200" y="68" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="3" fill="#f5c518">HOLIČSTVO · DUBNICA NAD VÁHOM</text>
+    <line x1="56" y1="82" x2="344" y2="82" stroke="#f5c518" stroke-width="1"/>
+    <text class="bg" x="200" y="246" text-anchor="middle" font-size="198" fill="#f5c518">52</text>
+    <text class="bg" x="200" y="292" text-anchor="middle" font-size="30" letter-spacing="3" fill="#fff">BARBER SHOP</text>
+    <rect x="50" y="314" width="300" height="92" fill="#0b1530" stroke="#f5c518" stroke-width="1.6"/>
+    <g>
+      <polygon points="64,336 336,336 346,346 346,374 336,384 64,384 54,374 54,346" transform="translate(0,4)" fill="#dde3e5" stroke="#8b979d" stroke-width="1"/>
+      <polygon points="150,340 176,340 146,388 120,388" fill="#fff" opacity=".4"/>
+      <line x1="64" y1="343" x2="336" y2="343" stroke="#8b979d" stroke-width="1"/>
+      <line x1="64" y1="381" x2="336" y2="381" stroke="#8b979d" stroke-width="1"/>
+      <path d="M134 364 L150 353 H250 L266 364 L250 375 H150 Z" fill="#0b1530"/>
+      <circle cx="94" cy="364" r="6.5" fill="#0b1530"/><circle cx="306" cy="364" r="6.5" fill="#0b1530"/>
+    </g>
+    <text x="200" y="440" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="2.6" fill="#fff">PÁNSKE STRIHY · ÚPRAVA FÚZOV</text>
+    <line x1="24" y1="462" x2="376" y2="462" stroke="#f5c518" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/>
+    <text x="200" y="492" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="2.6" fill="#c7d3f7">REZERVÁCIA ONLINE CEZ BOOKIO</text>
+  </svg>
+  </div>
+</div></section>
+
+<section class="hours" aria-label="Otváracie hodiny"><div class="wrap">
+  <span class="lbl">Hodiny</span>
+  <p class="num">Po–Pi 9:00–18:00 · So–Ne zatvorené <em>— podľa katalógu slovenskobcan.com (30. 9. 2026), overiť</em></p>
+</div></section>
+
+<section class="rez" id="rezervacia"><div class="wrap rez-g">
+  <div>
+    <span class="lbl">Rezervácia online</span>
+    <h2>Termín si vyberiete sami, bez volania</h2>
+    <p>Voľné termíny aj cenník služieb nájdete v rezervačnom systéme Bookio. Stačí jedno kliknutie.</p>
+    <p class="tiny">Ukážka návrhu: cenník sem prenesieme, keď ho majiteľ odsúhlasí.</p>
+  </div>
+  <div class="ticket">
+    <span class="lbl">Bookio · rezervácia termínu</span>
+    <h3>Vybrať si termín</h3>
+    <a class="btn btn-b" href="https://services.bookio.com/52-barber-shop-7yi0pli7/widget?lang=sk" target="_blank" rel="noopener">Rezervovať cez Bookio</a>
+    <ul class="langs" aria-label="Jazyky rezervačného systému"><li>SK</li><li>EN</li><li>CS</li><li>DE</li><li>HU</li><li>PL</li><li>UK</li></ul>
+    <small>Rezervačný systém funguje v siedmich jazykoch. Odkaz vedie na ich existujúci Bookio, nie na toto demo.</small>
+  </div>
+</div></section>
+
+<section class="sl" id="sluzby"><div class="wrap sl-g">
+  <div class="side">
+    <span class="lbl">Čo robia</span>
+    <h2>Strih, fúzy, štýl</h2>
+    <p>Podľa popisu na profile Orly Kaderníctva: pánske strihy, úprava fúzov a konzultácia štýlu.</p>
+  </div>
+  <ul class="rows">
+    <li>
+      <svg viewBox="0 0 64 26" aria-hidden="true"><polygon points="5,3 59,3 62,6 62,20 59,23 5,23 2,20 2,6" fill="#dde3e5" stroke="#0b1530" stroke-width="1.6"/><path d="M22 13 L26 9 H38 L42 13 L38 17 H26 Z" fill="#0b1530"/></svg>
+      <div><h3>Pánske strihy</h3></div>
+      <span class="pr">cenník v rezervačnom systéme</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 64 26" aria-hidden="true"><polygon points="5,3 59,3 62,6 62,20 59,23 5,23 2,20 2,6" fill="#dde3e5" stroke="#0b1530" stroke-width="1.6"/><circle cx="14" cy="13" r="3.2" fill="#0b1530"/><circle cx="50" cy="13" r="3.2" fill="#0b1530"/></svg>
+      <div><h3>Úprava fúzov</h3></div>
+      <span class="pr">cenník v rezervačnom systéme</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 64 26" aria-hidden="true"><polygon points="5,3 59,3 62,6 62,20 59,23 5,23 2,20 2,6" fill="#dde3e5" stroke="#0b1530" stroke-width="1.6"/><line x1="10" y1="9" x2="54" y2="9" stroke="#0b1530" stroke-width="1.6"/><line x1="10" y1="17" x2="54" y2="17" stroke="#0b1530" stroke-width="1.6"/></svg>
+      <div><h3>Konzultácia štýlu</h3></div>
+      <span class="pr">cenu povieme pri objednaní</span>
+    </li>
+  </ul>
+</div></section>
+
+<section class="why" id="preco"><div class="wrap">
+  <div class="why-top">
+    <div class="medal">
+      <svg viewBox="0 0 160 160" role="img" aria-label="Odznak: zlatá medaila, laureát 2022–2026">
+        <circle cx="80" cy="80" r="76" fill="#f5c518"/><circle cx="80" cy="80" r="66" fill="none" stroke="#0b1530" stroke-width="1.6" stroke-dasharray="1.5 5" stroke-linecap="round"/>
+        <text x="80" y="62" text-anchor="middle" font-family="Bungee,sans-serif" font-size="15" fill="#0b1530">LAUREÁT</text>
+        <text x="80" y="92" text-anchor="middle" font-family="Bungee,sans-serif" font-size="26" fill="#0b1530">2022–</text>
+        <text x="80" y="116" text-anchor="middle" font-family="Bungee,sans-serif" font-size="26" fill="#0b1530">2026</text>
+      </svg>
+      <div class="big num">5,0<small>Google 63 · Orly 62 hodnotení</small></div>
+    </div>
+    <p class="why-q">Zlatá medaila a laureát Orly Kaderníctva 2022 až 2026, k tomu päť hviezdičiek na Googli.</p>
+  </div>
+  <ul class="pts">
+    <li><h3>Presnosť a detail</h3><p>Tak sa opisujú na profile Orly Kaderníctva.</p></li>
+    <li><h3>Školený personál</h3><p>Aj toto uvádza ich profil na Orly Kaderníctva.</p></li>
+    <li><h3>Online rezervácia</h3><p>Termín si zákazník vyberie cez Bookio.</p></li>
+  </ul>
+  <p class="src">Zdroje: profil na Orly Kaderníctva, Google, katalóg slovenskobcan.com. Texty recenzií tu necitujeme. Počty hodnotení sa medzi zdrojmi líšia o pár kusov (61–63), pred zverejnením overiť.</p>
+</div></section>
+
+<section class="ct" id="kontakt"><div class="wrap ct-g">
+  <div>
+    <span class="lbl">Kontakt</span>
+    <h2>Kde nás nájdete</h2>
+    <dl>
+      <div><dt>Adresa</dt><dd>Centrum II. 70, 018 41 Dubnica nad Váhom<em>Orly Kaderníctva aj katalóg uvádzajú rovnakú adresu</em></dd></div>
+      <div><dt>Telefón</dt><dd class="num"><a href="tel:+421905520052">0905 520 052</a><em>číslo z katalógu slovenskobcan.com, overiť</em></dd></div>
+      <div><dt>Hodiny</dt><dd class="num">Po–Pi 9:00–18:00<em>jediný zdroj je katalóg, overiť</em></dd></div>
+      <div><dt>Rezervácia</dt><dd><a href="https://services.bookio.com/52-barber-shop-7yi0pli7/widget?lang=sk" target="_blank" rel="noopener">Bookio — rezervácia termínu</a></dd></div>
+      <div><dt>Instagram</dt><dd><a href="https://instagram.com/52_barbershop" target="_blank" rel="noopener">@52_barbershop</a></dd></div>
+    </dl>
+  </div>
+  <aside class="nav-card">
+    <span class="lbl">Navigácia</span>
+    <h3>Centrum II. 70</h3>
+    <p class="num">018 41 Dubnica nad Váhom. Otvorí sa Google Maps s vyhľadaním adresy.</p>
+    <a class="btn btn-y" href="https://www.google.com/maps/search/52+Barber+Shop+Centrum+II.+70+Dubnica+nad+V%C3%A1hom" target="_blank" rel="noopener">Navigovať</a>
+  </aside>
+</div></section>
+</main>
+
+<footer class="ft"><div class="wrap">
+  <span><b>Neoficiálny návrh webu</b> · webdavid.sk · 2026</span>
+  <span>52 Barber Shop · Centrum II. 70, Dubnica nad Váhom</span>
+</div></footer>
+
+<nav class="mbar" aria-label="Rýchle akcie">
+  <a class="btn btn-y" href="https://services.bookio.com/52-barber-shop-7yi0pli7/widget?lang=sk" target="_blank" rel="noopener">Rezervovať</a>
+  <a class="btn btn-o" href="https://instagram.com/52_barbershop" target="_blank" rel="noopener">Instagram</a>
+</nav>
+</html>
